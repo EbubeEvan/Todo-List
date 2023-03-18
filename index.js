@@ -12,7 +12,7 @@ class TD {
 
         const list = JSON.parse(localStorage.getItem("taskList"));
         if (list?.length){
-          this.taskId = list[0].id  + 1 
+          this.taskId = list[list.length-1].id  + 1 
         } else {
             this.taskId = 1 
         }
